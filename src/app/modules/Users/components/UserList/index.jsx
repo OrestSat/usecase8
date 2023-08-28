@@ -9,10 +9,10 @@ const UserList = () => {
   const users = useSelector(state => state.users);
 
   return (
-    <div className={styles.root}>
+    <div className={styles.root} data-testid='user-list'>
       <table className={styles.table}>
         <thead>
-          <tr>
+          <tr data-testid='header-row'>
             {userColumns.map(column => (
               <th key={column.key} >{column.label}</th>
             ))}
@@ -20,7 +20,7 @@ const UserList = () => {
         </thead>
         <tbody>
           {users.map((user, index) => (
-            <tr key={`${user.firstName}-${index}`}>
+            <tr key={`${user.firstName}-${index}`} data-testid='data-row' >
               {userColumns.map(column => (
                 <td key={column.key}>{user[column.key]}</td>
               ))}

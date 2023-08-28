@@ -34,7 +34,7 @@ const UserForm = () => {
   };
 
   return (
-    <div className={styles.root}>
+    <div className={styles.root} data-testid='user-form'>
       <fieldset>
         <legend>User form</legend>
         <div className='form-container'>
@@ -67,6 +67,7 @@ const UserForm = () => {
             onChange={setFieldValue}
           />
           <button //Submit button is always enabled. But submit action won't proceed if the form is invalid
+            data-testid='submit-btn'
             onClick={onSubmit}>
             Submit
           </button>
