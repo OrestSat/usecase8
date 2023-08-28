@@ -1,6 +1,23 @@
-# Getting Started with Create React App and Redux
+# usecase 8
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+This is test project based on usecase8. 
+Create user interface components for the form to collect and display an information 
+
+## Description
+
+Create user interface components for a form with the help of programming language, markup templating and add styling. Additionally, provide necessary event handlers to the created form's components to enable data collection from the user. Moreover, establish a connection with a centralized state manager solution to display the initial state and send collected data to the API 
+
+## Global Dependencies
+- ```Node JS (v. 18.x)```
+- ```Npm (v. 9.x)```
+- ```React (v. 18.x)```
+- ```redux (v. 4.x.x )```
+- ```Validator (v.13.x.x)```
+
+## How to install app dependencies
+  ```
+  npm install
+  ```
 
 ## Available Scripts
 
