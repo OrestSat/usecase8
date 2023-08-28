@@ -19,8 +19,8 @@ const UserList = () => {
           </tr>
         </thead>
         <tbody>
-          {users.map((user, index) => (
-            <tr key={`${user.firstName}-${index}`} data-testid='data-row' >
+          {users.map((user) => (
+            <tr key={`${user.firstName}-${user.lastName}-${user.email}`} data-testid='data-row' >
               {userColumns.map(column => (
                 <td key={column.key}>{user[column.key]}</td>
               ))}
