@@ -7,7 +7,7 @@ import Input from '../../../../shared/Input';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../../usersSlice';
 import { getValue } from './utils';
-import styles from '../../Users.module.css';
+import styles from './UserForm.module.css';
 
 const UserForm = () => {
   const [values, setValues] = useState(initialValues);
@@ -34,7 +34,7 @@ const UserForm = () => {
   };
 
   return (
-    <div className={styles.formContainer}>
+    <div className={styles.root}>
       <fieldset>
         <legend>User form</legend>
         <div className='form-container'>
